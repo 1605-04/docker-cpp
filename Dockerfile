@@ -1,4 +1,4 @@
 FROM ubuntu
-RUN apt-get update -y
-RUN apt-get upgrate -y
+RUN apt-get update
+RUN apt-get upgrate
 RUN apt-get install build-essential -y

@@ -2,7 +2,7 @@ FROM ubuntu
 COPY sources.list /etc/apt/sources.list
 
 # common tools
-RUN apt-get update && apt-get -y install build-essential
+RUN apt-get update && apt-get -y install libc-dev build-essential
 
 # 配置中文语言
 ENV LANGUAGE zh_CN.UTF-8

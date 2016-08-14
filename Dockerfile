@@ -1,4 +1,4 @@
-FROM reg.docker.alibaba-inc.com/ubuntu
+FROM ubuntu
 COPY sources.list /etc/apt/sources.list
 
 # common tools

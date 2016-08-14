@@ -2,7 +2,7 @@ FROM ubuntu
 COPY sources.list /etc/apt/sources.list
 
 # common tools
-RUN apt-get update && apt-get -y upgrade  && apt-get -y install dpkg-dev libc6 libc-dev-bin libc-dev build-essential
+RUN apt-get update && apt-get -y upgrade  && apt-get -y install libdpkg-perl bzip2 libalgorithm-merge-perl libc6 dpkg-dev libc6 libc-dev-bin libc-dev build-essential
 
 # 配置中文语言
 ENV LANGUAGE zh_CN.UTF-8
